@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GamePlan.Business.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="GamePlanBusinessStoreContainer">
+    <EntitySet Name="glb_Company" EntityType="GamePlan.Business.Store.glb_Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="glb_Company1" EntityType="GamePlan.Business.Store.glb_Company1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileAdmin" EntityType="GamePlan.Business.Store.PC_MobileAdmin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileCompany1" EntityType="GamePlan.Business.Store.PC_MobileCompany1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileCountry" EntityType="GamePlan.Business.Store.PC_MobileCountry" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileFeedbackRange" EntityType="GamePlan.Business.Store.PC_MobileFeedbackRange" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileGeneralFeedback" EntityType="GamePlan.Business.Store.PC_MobileGeneralFeedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileLanguage" EntityType="GamePlan.Business.Store.PC_MobileLanguage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileListener" EntityType="GamePlan.Business.Store.PC_MobileListener" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileProduct" EntityType="GamePlan.Business.Store.PC_MobileProduct" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileProductCompany" EntityType="GamePlan.Business.Store.PC_MobileProductCompany" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileProductFeedback" EntityType="GamePlan.Business.Store.PC_MobileProductFeedback" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileProductUser" EntityType="GamePlan.Business.Store.PC_MobileProductUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileQuestion" EntityType="GamePlan.Business.Store.PC_MobileQuestion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileUser" EntityType="GamePlan.Business.Store.PC_MobileUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PC_MobileCompany" EntityType="GamePlan.Business.Store.PC_MobileCompany" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_User_Country" Association="GamePlan.Business.Store.FK_User_Country">
+      <End Role="PC_MobileCountry" EntitySet="PC_MobileCountry" />
+      <End Role="PC_MobileUser" EntitySet="PC_MobileUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GenFeed_Language" Association="GamePlan.Business.Store.FK_GenFeed_Language">
+      <End Role="PC_MobileLanguage" EntitySet="PC_MobileLanguage" />
+      <End Role="PC_MobileGeneralFeedback" EntitySet="PC_MobileGeneralFeedback" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProdFeedback_Language" Association="GamePlan.Business.Store.FK_ProdFeedback_Language">
+      <End Role="PC_MobileLanguage" EntitySet="PC_MobileLanguage" />
+      <End Role="PC_MobileProductFeedback" EntitySet="PC_MobileProductFeedback" />
+    </AssociationSet>
+    <AssociationSet Name="FK_user_Language" Association="GamePlan.Business.Store.FK_user_Language">
+      <End Role="PC_MobileLanguage" EntitySet="PC_MobileLanguage" />
+      <End Role="PC_MobileUser" EntitySet="PC_MobileUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Listner_User" Association="GamePlan.Business.Store.FK_Listner_User">
+      <End Role="PC_MobileUser" EntitySet="PC_MobileUser" />
+      <End Role="PC_MobileListener" EntitySet="PC_MobileListener" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Survey_Userdetails_Product" Association="GamePlan.Business.Store.FK_Survey_Userdetails_Product">
+      <End Role="PC_MobileProduct" EntitySet="PC_MobileProduct" />
+      <End Role="PC_MobileListener" EntitySet="PC_MobileListener" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PrdFeedback_Product" Association="GamePlan.Business.Store.FK_PrdFeedback_Product">
+      <End Role="PC_MobileProduct" EntitySet="PC_MobileProduct" />
+      <End Role="PC_MobileProductFeedback" EntitySet="PC_MobileProductFeedback" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_Company_Relation_tblProduct_Feedback" Association="GamePlan.Business.Store.FK_Product_Company_Relation_tblProduct_Feedback">
+      <End Role="PC_MobileProduct" EntitySet="PC_MobileProduct" />
+      <End Role="PC_MobileProductCompany" EntitySet="PC_MobileProductCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_User_Relation_tblProduct_Feedback" Association="GamePlan.Business.Store.FK_Product_User_Relation_tblProduct_Feedback">
+      <End Role="PC_MobileProduct" EntitySet="PC_MobileProduct" />
+      <End Role="PC_MobileProductUser" EntitySet="PC_MobileProductUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Product_User_Relation_tblUsers" Association="GamePlan.Business.Store.FK_Product_User_Relation_tblUsers">
+      <End Role="PC_MobileUser" EntitySet="PC_MobileUser" />
+      <End Role="PC_MobileProductUser" EntitySet="PC_MobileProductUser" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="glb_Company">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PartnerID" Type="int" Nullable="false" />
+    <Property Name="IndustryID" Type="int" Nullable="false" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="ModuleID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="State" Type="nvarchar" Nullable="true" MaxLength="32" />
+    <Property Name="City" Type="nvarchar" Nullable="true" MaxLength="128" />
+    <Property Name="Zip" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="ContactName" Type="nvarchar" Nullable="true" MaxLength="128" />
+    <Property Name="PhoneNumber" Type="nvarchar" Nullable="true" MaxLength="16" />
+    <Property Name="FaxNumber" Type="nvarchar" Nullable="true" MaxLength="16" />
+    <Property Name="EmailAddress" Type="nvarchar" Nullable="true" MaxLength="256" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="true" />
+    <Property Name="LastModifiedDateTime" Type="datetime" Nullable="true" />
+    <Property Name="RowVersion" Type="binary" StoreGeneratedPattern="Computed" Nullable="false" MaxLength="8" />
+    <Property Name="CompanySizeID" Type="int" Nullable="true" />
+    <Property Name="CompanyPrimaryCntID" Type="int" Nullable="true" />
+    <Property Name="OLDID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="glb_Company1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PartnerID" Type="int" Nullable="false" />
+    <Property Name="IndustryID" Type="int" Nullable="false" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="ModuleID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="Address" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="State" Type="nvarchar" Nullable="true" MaxLength="32" />
+    <Property Name="City" Type="nvarchar" Nullable="true" MaxLength="128" />
+    <Property Name="Zip" Type="nvarchar" Nullable="false" MaxLength="32" />
+    <Property Name="ContactName" Type="nvarchar" Nullable="true" MaxLength="128" />
+    <Property Name="PhoneNumber" Type="nvarchar" Nullable="true" MaxLength="16" />
+    <Property Name="FaxNumber" Type="nvarchar" Nullable="true" MaxLength="16" />
+    <Property Name="EmailAddress" Type="nvarchar" Nullable="true" MaxLength="256" />
+    <Property Name="CreatedDateTime" Type="datetime" Nullable="true" />
+    <Property Name="LastModifiedDateTime" Type="datetime" Nullable="true" />
+    <Property Name="RowVersion" Type="binary" StoreGeneratedPattern="Computed" Nullable="false" MaxLength="8" />
+    <Property Name="CompanySizeID" Type="int" Nullable="true" />
+    <Property Name="CompanyPrimaryCntID" Type="int" Nullable="true" />
+    <Property Name="OLDID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="PC_MobileAdmin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsSuperAdmin" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileCompany1">
+    <Key>
+      <PropertyRef Name="CompanyID" />
+    </Key>
+    <Property Name="CompanyID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="PC_MobileCountry">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CountryCode" Type="char" Nullable="true" MaxLength="3" />
+    <Property Name="CountryName" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PC_MobileFeedbackRange">
+    <Key>
+      <PropertyRef Name="RangeID" />
+    </Key>
+    <Property Name="RangeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MinValue" Type="tinyint" Nullable="false" />
+    <Property Name="MAxValue" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileGeneralFeedback">
+    <Key>
+      <PropertyRef Name="GeneralFeedID" />
+    </Key>
+    <Property Name="GeneralFeedID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MatrixValue" Type="tinyint" Nullable="false" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+    <Property Name="GeneralFeedback" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileLanguage">
+    <Key>
+      <PropertyRef Name="LanguageID" />
+    </Key>
+    <Property Name="LanguageID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LanguageName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="LocalizationName" Type="nvarchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PC_MobileListener">
+    <Key>
+      <PropertyRef Name="SurveyUserID" />
+    </Key>
+    <Property Name="SurveyUserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ProductID" Type="int" Nullable="true" />
+    <Property Name="Gender" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="Age" Type="tinyint" Nullable="true" />
+    <Property Name="Email" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Phone" Type="varchar" Nullable="true" MaxLength="12" />
+    <Property Name="SurveyDate" Type="datetime" Nullable="true" />
+    <Property Name="Address" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="Comments" Type="varchar" Nullable="true" MaxLength="250" />
+    <Property Name="RegID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="PC_MobileProduct">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileProductCompany">
+    <Key>
+      <PropertyRef Name="ProductCompID" />
+    </Key>
+    <Property Name="ProductCompID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileProductFeedback">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="Feedback" Type="varchar(max)" Nullable="false" />
+    <Property Name="MatrixPosition" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileProductUser">
+    <Key>
+      <PropertyRef Name="ProductUserID" />
+    </Key>
+    <Property Name="ProductUserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="int" Nullable="false" />
+    <Property Name="RegID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileQuestion">
+    <Key>
+      <PropertyRef Name="QuesID" />
+    </Key>
+    <Property Name="QuesID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QuesText1" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="QuesText2" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="QuesType" Type="tinyint" Nullable="false" />
+    <Property Name="LanguageID" Type="int" Nullable="false" />
+    <Property Name="QuestionNumber" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="PC_MobileUser">
+    <Key>
+      <PropertyRef Name="RegID" />
+    </Key>
+    <Property Name="RegID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="FirstName" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="CountryID" Type="int" Nullable="false" />
+    <Property Name="CompanyID" Type="int" Nullable="true" />
+    <Property Name="LanguageID" Type="int" Nullable="true" />
+    <Property Name="Emotional" Type="float" Nullable="true" />
+    <Property Name="Dominance" Type="float" Nullable="true" />
+    <Property Name="Gender" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="AccountExpDate" Type="datetime" Nullable="true" />
+    <Property Name="AccountInitDate" Type="datetime" Nullable="true" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PC_MobileCompany">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="128" />
+  </EntityType>
+  <Association Name="FK_User_Country">
+    <End Role="PC_MobileCountry" Type="GamePlan.Business.Store.PC_MobileCountry" Multiplicity="1" />
+    <End Role="PC_MobileUser" Type="GamePlan.Business.Store.PC_MobileUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileCountry">
+        <PropertyRef Name="CountryID" />
+      </Principal>
+      <Dependent Role="PC_MobileUser">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GenFeed_Language">
+    <End Role="PC_MobileLanguage" Type="GamePlan.Business.Store.PC_MobileLanguage" Multiplicity="1" />
+    <End Role="PC_MobileGeneralFeedback" Type="GamePlan.Business.Store.PC_MobileGeneralFeedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileLanguage">
+        <PropertyRef Name="LanguageID" />
+      </Principal>
+      <Dependent Role="PC_MobileGeneralFeedback">
+        <PropertyRef Name="LanguageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProdFeedback_Language">
+    <End Role="PC_MobileLanguage" Type="GamePlan.Business.Store.PC_MobileLanguage" Multiplicity="1" />
+    <End Role="PC_MobileProductFeedback" Type="GamePlan.Business.Store.PC_MobileProductFeedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileLanguage">
+        <PropertyRef Name="LanguageID" />
+      </Principal>
+      <Dependent Role="PC_MobileProductFeedback">
+        <PropertyRef Name="LanguageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_user_Language">
+    <End Role="PC_MobileLanguage" Type="GamePlan.Business.Store.PC_MobileLanguage" Multiplicity="0..1" />
+    <End Role="PC_MobileUser" Type="GamePlan.Business.Store.PC_MobileUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileLanguage">
+        <PropertyRef Name="LanguageID" />
+      </Principal>
+      <Dependent Role="PC_MobileUser">
+        <PropertyRef Name="LanguageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Listner_User">
+    <End Role="PC_MobileUser" Type="GamePlan.Business.Store.PC_MobileUser" Multiplicity="0..1" />
+    <End Role="PC_MobileListener" Type="GamePlan.Business.Store.PC_MobileListener" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileUser">
+        <PropertyRef Name="RegID" />
+      </Principal>
+      <Dependent Role="PC_MobileListener">
+        <PropertyRef Name="RegID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Survey_Userdetails_Product">
+    <End Role="PC_MobileProduct" Type="GamePlan.Business.Store.PC_MobileProduct" Multiplicity="0..1" />
+    <End Role="PC_MobileListener" Type="GamePlan.Business.Store.PC_MobileListener" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileProduct">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="PC_MobileListener">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PrdFeedback_Product">
+    <End Role="PC_MobileProduct" Type="GamePlan.Business.Store.PC_MobileProduct" Multiplicity="1" />
+    <End Role="PC_MobileProductFeedback" Type="GamePlan.Business.Store.PC_MobileProductFeedback" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileProduct">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="PC_MobileProductFeedback">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_Company_Relation_tblProduct_Feedback">
+    <End Role="PC_MobileProduct" Type="GamePlan.Business.Store.PC_MobileProduct" Multiplicity="1" />
+    <End Role="PC_MobileProductCompany" Type="GamePlan.Business.Store.PC_MobileProductCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileProduct">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="PC_MobileProductCompany">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_User_Relation_tblProduct_Feedback">
+    <End Role="PC_MobileProduct" Type="GamePlan.Business.Store.PC_MobileProduct" Multiplicity="1" />
+    <End Role="PC_MobileProductUser" Type="GamePlan.Business.Store.PC_MobileProductUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileProduct">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="PC_MobileProductUser">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Product_User_Relation_tblUsers">
+    <End Role="PC_MobileUser" Type="GamePlan.Business.Store.PC_MobileUser" Multiplicity="1" />
+    <End Role="PC_MobileProductUser" Type="GamePlan.Business.Store.PC_MobileProductUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PC_MobileUser">
+        <PropertyRef Name="RegID" />
+      </Principal>
+      <Dependent Role="PC_MobileProductUser">
+        <PropertyRef Name="RegID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

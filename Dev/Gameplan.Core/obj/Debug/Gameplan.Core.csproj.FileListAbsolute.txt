@@ -1,0 +1,13 @@
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Gameplan.Core.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Gameplan.Core.pdb
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Microsoft.Practices.Unity.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\obj\Debug\Gameplan.Core.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\obj\Debug\Gameplan.Core.pdb
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\obj\Debug\Gameplan.Core.csprojAssemblyReference.cache
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Core\obj\Debug\Gameplan.Core.csproj.CopyComplete

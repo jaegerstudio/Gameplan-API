@@ -1,0 +1,6 @@
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Data\bin\Debug\Gameplan.Data.dll.config
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Data\bin\Debug\Gameplan.Data.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Data\bin\Debug\Gameplan.Data.pdb
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Data\obj\Debug\Gameplan.Data.dll
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Data\obj\Debug\Gameplan.Data.pdb
+D:\sourcecode\dev\GamePlanWebServicev4\Dev\Gameplan.Data\obj\Debug\Gameplan.Data.csprojAssemblyReference.cache

@@ -1,0 +1,23 @@
+﻿create table [core].[glb_Company1]
+(
+	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
+	[PartnerID] [int] NOT NULL,
+	[IndustryID] [int] NOT NULL,
+	[CountryID] [int] NOT NULL,
+	[ModuleID] [int] NOT NULL,
+	[Name] [nvarchar](128) NOT NULL,
+	[Address] [nvarchar](256) NOT NULL,
+	[State] [nvarchar](32) NULL,
+	[City] [nvarchar](128) NULL,
+	[Zip] [nvarchar](32) NOT NULL,
+	[ContactName] [nvarchar](128) NULL,
+	[PhoneNumber] [nvarchar](16) NULL,
+	[FaxNumber] [nvarchar](16) NULL,
+	[EmailAddress] [nvarchar](256) NULL,
+	[CreatedDateTime] [datetime] NULL constraint core_Company1_df_CreatedDateTime default getdate(),
+	[LastModifiedDateTime] [datetime] NULL constraint core_Company1_df_LastModifiedDateTime default getdate(),
+	[RowVersion] [timestamp] NOT NULL,
+	[CompanySizeID] [int] NULL,
+	[CompanyPrimaryCntID] [int] NULL,
+	[OLDID] [int] NULL,
+)

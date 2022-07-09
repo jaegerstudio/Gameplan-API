@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PCmobilegameplan" Class="PersonaMainDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=user-pc\tanh;Initial Catalog=PCmobilegameplan;Integrated Security=True" SettingsObjectName="Gameplan.Data.Properties.Settings" SettingsPropertyName="PCmobilegameplanConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.PC2_Email" Member="PC2_Emails">
+    <Type Name="PC2_Email">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmailType" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="LanguageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SubjectText" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="EmailText" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PtnerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CompID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PC2_EmailTemplate" Member="PC2_EmailTemplates">
+    <Type Name="PC2_EmailTemplate">
+      <Column Name="MessageFormatID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MessageFormat" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PartnerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PC2_EmailType" Member="PC2_EmailTypes">
+    <Type Name="PC2_EmailType">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EmailTypeDesc" Type="System.String" DbType="NVarChar(75) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

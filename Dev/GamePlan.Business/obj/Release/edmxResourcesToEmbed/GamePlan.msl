@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GamePlanBusinessStoreContainer" CdmEntityContainer="GamePlanEntities">
+    <EntitySetMapping Name="glb_Company">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.glb_Company)">
+        <MappingFragment StoreEntitySet="glb_Company">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartnerID" ColumnName="PartnerID" />
+          <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="LastModifiedDateTime" ColumnName="LastModifiedDateTime" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+          <ScalarProperty Name="CompanySizeID" ColumnName="CompanySizeID" />
+          <ScalarProperty Name="CompanyPrimaryCntID" ColumnName="CompanyPrimaryCntID" />
+          <ScalarProperty Name="OLDID" ColumnName="OLDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="glb_Company1">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.glb_Company1)">
+        <MappingFragment StoreEntitySet="glb_Company1">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartnerID" ColumnName="PartnerID" />
+          <ScalarProperty Name="IndustryID" ColumnName="IndustryID" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="ModuleID" ColumnName="ModuleID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+          <ScalarProperty Name="LastModifiedDateTime" ColumnName="LastModifiedDateTime" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+          <ScalarProperty Name="CompanySizeID" ColumnName="CompanySizeID" />
+          <ScalarProperty Name="CompanyPrimaryCntID" ColumnName="CompanyPrimaryCntID" />
+          <ScalarProperty Name="OLDID" ColumnName="OLDID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileAdmin">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileAdmin)">
+        <MappingFragment StoreEntitySet="PC_MobileAdmin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsSuperAdmin" ColumnName="IsSuperAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileCompany1">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileCompany1)">
+        <MappingFragment StoreEntitySet="PC_MobileCompany1">
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileCountry">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileCountry)">
+        <MappingFragment StoreEntitySet="PC_MobileCountry">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileFeedbackRange">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileFeedbackRange)">
+        <MappingFragment StoreEntitySet="PC_MobileFeedbackRange">
+          <ScalarProperty Name="RangeID" ColumnName="RangeID" />
+          <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+          <ScalarProperty Name="MAxValue" ColumnName="MAxValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileGeneralFeedback">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileGeneralFeedback)">
+        <MappingFragment StoreEntitySet="PC_MobileGeneralFeedback">
+          <ScalarProperty Name="GeneralFeedID" ColumnName="GeneralFeedID" />
+          <ScalarProperty Name="MatrixValue" ColumnName="MatrixValue" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="GeneralFeedback" ColumnName="GeneralFeedback" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileLanguage">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileLanguage)">
+        <MappingFragment StoreEntitySet="PC_MobileLanguage">
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="LanguageName" ColumnName="LanguageName" />
+          <ScalarProperty Name="LocalizationName" ColumnName="LocalizationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileListener">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileListener)">
+        <MappingFragment StoreEntitySet="PC_MobileListener">
+          <ScalarProperty Name="SurveyUserID" ColumnName="SurveyUserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="SurveyDate" ColumnName="SurveyDate" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="RegID" ColumnName="RegID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileProduct">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileProduct)">
+        <MappingFragment StoreEntitySet="PC_MobileProduct">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileProductCompany">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileProductCompany)">
+        <MappingFragment StoreEntitySet="PC_MobileProductCompany">
+          <ScalarProperty Name="ProductCompID" ColumnName="ProductCompID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileProductFeedback">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileProductFeedback)">
+        <MappingFragment StoreEntitySet="PC_MobileProductFeedback">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Feedback" ColumnName="Feedback" />
+          <ScalarProperty Name="MatrixPosition" ColumnName="MatrixPosition" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileProductUser">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileProductUser)">
+        <MappingFragment StoreEntitySet="PC_MobileProductUser">
+          <ScalarProperty Name="ProductUserID" ColumnName="ProductUserID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="RegID" ColumnName="RegID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileQuestion">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileQuestion)">
+        <MappingFragment StoreEntitySet="PC_MobileQuestion">
+          <ScalarProperty Name="QuesID" ColumnName="QuesID" />
+          <ScalarProperty Name="QuesText1" ColumnName="QuesText1" />
+          <ScalarProperty Name="QuesText2" ColumnName="QuesText2" />
+          <ScalarProperty Name="QuesType" ColumnName="QuesType" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="QuestionNumber" ColumnName="QuestionNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileUser">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileUser)">
+        <MappingFragment StoreEntitySet="PC_MobileUser">
+          <ScalarProperty Name="RegID" ColumnName="RegID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CompanyID" ColumnName="CompanyID" />
+          <ScalarProperty Name="LanguageID" ColumnName="LanguageID" />
+          <ScalarProperty Name="Emotional" ColumnName="Emotional" />
+          <ScalarProperty Name="Dominance" ColumnName="Dominance" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="IsEnabled" ColumnName="IsEnabled" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="AccountExpDate" ColumnName="AccountExpDate" />
+          <ScalarProperty Name="AccountInitDate" ColumnName="AccountInitDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PC_MobileCompany">
+      <EntityTypeMapping TypeName="IsTypeOf(GamePlan.Business.PC_MobileCompany)">
+        <MappingFragment StoreEntitySet="PC_MobileCompany">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

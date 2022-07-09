@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 18, 22.5" name="Gameplan.Data">
+  <DataContextMoniker Name="/MobileGameplan" />
+  <nestedChildShapes>
+    <classShape Id="a9e9c225-0dc6-4bb4-93d4-a44500accc56" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/MobileGameplan/CompanyInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="30d38068-9a24-4171-ad4c-45ca46e14597" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4bad29f3-993f-4a64-aa62-76f38920fb38" absoluteBounds="0.75, 2.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/MobileGameplan/ContactCompleted" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b132f93-0a26-4fe9-8ddd-a244ef05f7d0" absoluteBounds="0.765, 3.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8f005f3-d459-4b7a-995f-3799370511ce" absoluteBounds="3.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MobileGameplan/ContactEvent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e56b498-784a-4179-a56f-06071cf8a855" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98140dca-3877-43fa-8e40-62baa1ba17d4" absoluteBounds="3.75, 3.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/MobileGameplan/ContactInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75401f26-b8fb-4cf4-ad05-5d2ec49c9ef7" absoluteBounds="3.7650000000000006, 4.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30d4c4e1-661f-4b9e-a381-d823eabadf9a" absoluteBounds="6.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MobileGameplan/ContactPending" />
+      <nestedChildShapes>
+        <elementListCompartment Id="88061898-cde6-4627-9064-0bf0e92abb6c" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ec2796d-2c5c-4e59-880c-ce69c7a27ea8" absoluteBounds="6.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/MobileGameplan/CountryInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a99096bf-b9f6-4b62-9a36-83d310bc0ee8" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="069cc9b6-8074-44fb-babd-6a21633bb665" absoluteBounds="6.75, 6.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MobileGameplan/DbVersion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17beb663-221d-49d4-911a-509da3bf2cdb" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa76c48e-ac20-41d6-af91-d320138da18c" absoluteBounds="0.75, 8.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/MobileGameplan/EventColor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b68d465-0c2d-47f4-8fb5-3b89c36bd133" absoluteBounds="0.76500000000000012, 9.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3529b431-df43-4238-b667-101d0c2589ad" absoluteBounds="9.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/MobileGameplan/EventInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5af5da57-aac2-468d-b796-c599ae79cc22" absoluteBounds="9.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a2e10af-b64f-4aee-81c6-759e3aafd838" absoluteBounds="3.75, 9.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/MobileGameplan/GeneralFeedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8d116481-7824-44f1-9e53-ed4400abed78" absoluteBounds="3.765, 10.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b90be89-a677-46d5-a74a-8c0b138e71e5" absoluteBounds="9.75, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/MobileGameplan/LanguageInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b030ac21-1589-4d3c-8240-f684d0b743a6" absoluteBounds="9.765, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e78bcf29-701f-4e24-8ee6-8268804d53e9" absoluteBounds="6.75, 9.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MobileGameplan/LogOfSync" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d99087a6-3df2-4a2a-85de-36ac8a1d7ee6" absoluteBounds="6.765, 10.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5c63c742-8b54-4af4-9601-0c7958a1d0a1" absoluteBounds="9.75, 7.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/MobileGameplan/NotesInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19c7a76c-9201-408a-b9f7-e92c9b14d208" absoluteBounds="9.765, 8.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57fe4b3a-b0c6-45f6-bab6-f7b4318b97df" absoluteBounds="9.75, 10.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MobileGameplan/PC_MobileGeneralFeedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c9d0ee6-0f35-4d95-ab18-e78f6d69c04a" absoluteBounds="9.765, 11.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c04d2856-a88f-4ee6-acc1-82d4d244784c" absoluteBounds="12.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/MobileGameplan/PC_MobileProductFeedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f8ab143-cc2a-4637-bbd4-3ca13b31f41d" absoluteBounds="12.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31db3a9c-9053-42e9-92a6-31c9254dd29f" absoluteBounds="0.75, 12.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/MobileGameplan/PendingQuestion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dae7f704-edd2-44d3-be54-c90a1f7141aa" absoluteBounds="0.76500000000000057, 13.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82e0088a-3f6e-4d7b-9ee3-264194e3c676" absoluteBounds="12.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/MobileGameplan/ProductFeedback" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfea4869-1f82-4fad-8aaf-6f2cbbba9db3" absoluteBounds="12.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40203996-ca90-4e0f-a23b-52d3328f1af3" absoluteBounds="3.75, 12.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/MobileGameplan/ProductInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35dac224-e32f-453b-9a34-0f715dc889d6" absoluteBounds="3.7650000000000006, 13.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d35dc28-db15-4513-acc5-6e2c4fe68d18" absoluteBounds="12.75, 6.75, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/MobileGameplan/ProductUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bde15ffa-5971-4fab-aa4e-7102be51bb65" absoluteBounds="12.765, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="addc25ae-2d39-40e6-b1c8-003cf73315f0" absoluteBounds="12.75, 9.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/MobileGameplan/QuestionInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="016e1b6e-0ec1-4613-8249-efa35b350639" absoluteBounds="12.765, 10.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11c7d894-0ae2-45f0-95c3-c3b462e788f4" absoluteBounds="12.75, 12.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MobileGameplan/Remiders" />
+      <nestedChildShapes>
+        <elementListCompartment Id="abb7fb2c-f143-48e2-a446-fc99f64871d6" absoluteBounds="12.765, 13.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c503f3b8-2e93-4b63-963d-e2aea63e6e6e" absoluteBounds="6.75, 13.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/MobileGameplan/Repeats" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d555cd1-7f75-4b2d-acba-25645b6f5c90" absoluteBounds="6.765, 14.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2a86a81-4859-4ae4-a03e-7ab7ecd00ccc" absoluteBounds="15.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/MobileGameplan/SecurityToken" />
+      <nestedChildShapes>
+        <elementListCompartment Id="773f7268-20f7-4e62-9b6e-9cc24189e4b1" absoluteBounds="15.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90296240-1f3b-468f-ab9b-b52abd7771d8" absoluteBounds="0.75, 15.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/MobileGameplan/ExpiredMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="783dcac5-6e34-4401-bc04-fac5b46df002" absoluteBounds="0.76499999999999968, 16.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e44a1e8c-d5a6-4a2d-bd5a-2ad7a2cc6eb1" absoluteBounds="15.75, 4.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/MobileGameplan/WarningMessage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59ee4b55-a610-4b6e-b649-42172c931b56" absoluteBounds="15.765, 5.2100000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18b198f9-b742-4804-9903-3e3fb3750be5" absoluteBounds="15.75, 7.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/MobileGameplan/PurchasePackage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6e14570-a559-4e55-bac4-6f62188c7f1f" absoluteBounds="15.765, 8.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="708ea2e4-56a8-43ed-bc84-0a5ae4c48131" absoluteBounds="9.75, 15.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/MobileGameplan/NotificationRegistration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="835449d8-b649-4472-9ca4-942bb9109d7d" absoluteBounds="9.765, 16.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d4edc3e9-8d1b-48df-8a49-1f37e919cb51" absoluteBounds="15.75, 10.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/MobileGameplan/PurchasePackageInformation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d828f3d-94ff-4dce-9634-f33d0d4d333b" absoluteBounds="15.765, 11.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="627554f6-a2a0-4593-994c-92c77c1b8aaf" absoluteBounds="12.75, 15.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/MobileGameplan/CountryPrice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c8bf69c-cf4c-4357-8722-ffbe378984d0" absoluteBounds="12.765, 16.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3bd4e920-8ec3-468b-8fac-5c67218ac3e3" absoluteBounds="15.75, 13.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/MobileGameplan/PC_CompanyContactInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eae02244-af5a-4fcb-bf6e-79929bf77fb3" absoluteBounds="15.765, 14.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7fd6de75-a055-45d7-b1d6-fce22f735984" absoluteBounds="3.75, 16.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/MobileGameplan/UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f1a8812a-1cb4-4318-9bf4-9d7e57d63746" absoluteBounds="3.765, 17.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1612229-8a59-4778-9ccb-318e920abca5" absoluteBounds="15.75, 17.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/MobileGameplan/UserInfo1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e795280-9119-4d63-8776-13d05545441c" absoluteBounds="15.765, 18.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
